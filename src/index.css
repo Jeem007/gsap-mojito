@@ -114,7 +114,8 @@ body {
                 }
 
                 p:last-of-type {
-                    @apply 2xl:text-start text-center;
+                     @apply text-start;
+                    /* @apply 2xl:text-start text-center; */
                 }
 
                 .view-cocktails {
@@ -125,7 +126,7 @@ body {
                     }
 
                     a {
-                        @apply font-semibold opacity-80 2xl:text-start text-center hover:text-yellow;
+                        @apply font-semibold opacity-40 2xl:text-start text-center hover:text-yellow;
                     }
                 }
             }

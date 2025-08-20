@@ -6,7 +6,8 @@ const Navbar = () =>{
     const navTween = gsap.timeline({
         scrollTrigger:{
             trigger:"nav",
-            start:"bottom top"   //1st part position of nav  and second reference view port position.
+            start:"bottom top",
+            end:"bottom top"   //1st part position of nav  and second reference view port position.
         }
     });
         navTween.fromTo('nav',{
