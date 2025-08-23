@@ -62,12 +62,12 @@ const Menu = () => {
     const prevCocktail = getCocktailAt(-1);
     const nextCocktail = getCocktailAt(1);
     return (
-        <section id="menu" aria-labelledby="menu-heading">
+        <section id="menu" aria-labelledby="menu-heading" >
             <img src="../../public/images/slider-left-leaf.png" alt="left-leaf" id="m-left-leaf" />
             <img src="../../public/images/slider-right-leaf.png" alt="right-leaf" id="m-right-leaf" />
 
             <h2 id="menu-heading" className="sr-only">Cocktail Menu</h2>
-            <nav className="cocktail-tabs" aria-label="Cocktail Navigation">
+            <div className="cocktail-tabs" aria-label="Cocktail Navigation">
                 {
                     sliderLists.map((cocktail, index) => {
                         const isActive = index == currentIndex;
@@ -80,7 +80,7 @@ const Menu = () => {
                         )
                     })
                 }
-            </nav>
+            </div>
             <div className='content'>
                 <div className='arrows'>
                     <button className='text-left' onClick={()=>goToSlide(currentIndex-1)}>
